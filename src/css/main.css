@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+.menu {
+  background-color: white;
+  margin: auto; }
+  .menu .logo {
+    margin: 8px;
+    width: 3%; }
+  .menu ul {
+    list-style: none; }
+    .menu ul li a {
+      color: black; }
+      .menu ul li a:hover {
+        border-top: 2px solid #181818;
+        padding: 0.5em 0 0 0;
+        color: black;
+        text-decoration: none; }
+    .menu ul .des {
+      font-weight: bold; }
+
+.header {
+  background-color: #f3f3f3; }
+  .header .me {
+    margin: auto; }
+    .header .me__pres {
+      font-weight: 300;
+      font-size: 1.2em; }
+    .header .me__name {
+      font-size: 2em; }
+    .header .me__job {
+      font-size: 1.2em;
+      color: #3f3f3f;
+      font-weight: 400; }
+
+.formlog {
+  width: 60%;
+  margin: 0 auto; }
+  .formlog h1 {
+    text-align: center; }
+  .formlog form {
+    margin: 10px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column; }
+  .formlog input {
+    margin: 10px 0 15px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px; }
+  .formlog form input[type="submit"] {
+    background-color: #5500ff;
+    border: none;
+    color: white;
+    font-size: 18px; }
