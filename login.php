@@ -6,11 +6,15 @@ if(isset($_POST['submit'])){
     $password = $_POST['password'];
     $requit = "SELECT * FROM admin WHERE Username='$username' AND password='$password'";
     $result = mysqli_query($conn, $requit);
-    if(mysqli_num_rows($result)>0){
-        $_SESSION['username']=$username;
-        header("LOCATION:dashbord.php");
-    } else{
-        $none= ' username or password invalid';
+    if($password === ""){
+        $none = 'enter votre password';
+    }else{
+        if(mysqli_num_rows($result)>0){
+            $_SESSION['username']=$username;
+            header("LOCATION:dashbord.php");
+        } else{
+            $none= ' username or password invalid';
+        }
     }
 }
 

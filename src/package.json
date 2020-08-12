@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-sass": "node-sass -w sass -o css",
-    "concat": "concat -o css/style.css css/main.css css/login.css",
+    "concat": "concat -o css/style.css css/main.css css/login.css css/contact.css",
     "prefix": "postcss css/main.css --use=autoprefixer --map=false -o css/main.css",
     "build": "npm run compile-sass &&npm run concat-sass &&  npm run prefix "
   },
